@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydraulic Pump</title>
+    <script defer src="js/hp.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Hydraulic Pump</a></li>
+                <li><a href="cr.html">Compression Ratio</a></li>
+                <li><a href="speed.html">Mph to kmph</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h3>Hydraulic Pump Calculator </h3>
+    <table>
+        <tr>
+            <td><label for="Vp">Vp (cc)</label></td>
+            <td><input type="number" id="Vp"></td>
+        </tr>
+        <tr>
+            <td><label for="Nv">Nv</label></td>
+            <td><input type="number" id="Nv"></td>
+        </tr>
+        <tr>
+            <td><label for="n">N (Hz)</label></td>
+            <td><input type="number" id="n"></td>
+        </tr>
+        <tr>
+            <td><label for="Nmh">Nmh</label></td>
+            <td><input type="number" id="Nmh"></td>
+        </tr>
+        <tr>
+            <td><label for="bar">bar</label></td>
+            <td><input type="number" id="bar"></td>
+        </tr>
+        <tr>
+            <td><label for="Tpomp">Tpomp (Nm)</label></td>
+            <td><input type="number" id="Tpomp"></td>
+        </tr>
+        <tr>
+            <td>
+                <hr>
+            </td>
+            <td>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="qvthp">qvthp</label></td>
+            <td><span id="qvthp"></span></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="qveffp">qveffp</label>
+            </td>
+            <td><span id="qveffp"></span></td>
+        </tr>
+        <tr>
+            <td><label for="Ntotp">Ntotp</label></td>
+            <td><span id="Ntotp"></span></td>
+        </tr>
+        <tr>
+            <td><label for="qvlekp">qvlekp</label></td>
+            <td><span id="qvlekp"></span></td>
+        </tr>
+        <tr>
+            <td><label for="Ppompas">Ppompas</label></td>
+            <td><span id="Ppompas"></span></td>
+        </tr>
+        <tr>
+            <td><label for="Pthp">Pthp</label></td>
+            <td><span id="Pthp"></span></td><br>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="hp" type="button">Calculate</button></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
