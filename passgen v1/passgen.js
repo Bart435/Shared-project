@@ -1,7 +1,7 @@
 // inputs
-let first = document.getElementById("first");
-let last = document.getElementById("last");
-let tel = document.getElementById("tel");
+const first = document.getElementById("first");
+const last = document.getElementById("last");
+const tel = document.getElementById("tel");
 // outputs
 const pass = document.getElementById("pass");
 const one = document.getElementById("one");
