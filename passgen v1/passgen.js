@@ -23,23 +23,23 @@ function password() {
     // Checking if first name is longer than 3
     if (first.value.length > 3) {
         t = true;
-        one.innerHTML = "✔";
+        one.innerHTML = "&#10004;";
     }else {
-        one.innerHTML = "❌";
+        one.innerHTML = "&#10006;";
     };
     // checking if last name is longer than 4
     if (last.value.length > 4) {
         e = true;
-        two.innerHTML = "✔";
+        two.innerHTML = "&#10004;";
     }else {
-        two.innerHTML = "❌";
+        two.innerHTML = "&#10006;";
     };
     // checking if tell is longer than 5
     if (tel.value.length > 5) {
         s = true;
-        three.innerHTML = "✔";
+        three.innerHTML = "&#10004;";
     }else {
-        three.innerHTML = "❌";
+        three.innerHTML = "&#10006;";
     };
     // if all values are correct output end result
     if (t, e ,s) {
