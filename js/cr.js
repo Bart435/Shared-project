@@ -7,5 +7,5 @@ const epsilon = document.getElementById("epsilon");
 
 function calcCR() {
     let calc = (parseInt(vs.value) + parseInt(vc.value)) / parseInt(vc.value);
-    epsilon.innerText = `${calc.toFixed(2)} : 1`
+    epsilon.innerHTML = `<strong>${calc.toFixed(2)} : 1</strong>`
 };

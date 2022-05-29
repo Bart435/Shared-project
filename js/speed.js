@@ -6,5 +6,5 @@ const speed = document.getElementById("speed").addEventListener("click", calcSpe
 function calcSpeed() {
     
 
-    kmph.innerText = mph.value * 1.609344
+    kmph.innerHTML = `<strong>${mph.value * 1.609344}</strong>`
 }
