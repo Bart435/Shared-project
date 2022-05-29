@@ -6,28 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hydraulic Pump</title>
-    <script defer src="js/hp.js"></script>
+    <script defer src="/js/Hp.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
+                <li><a href="/index.html">Index</a></li>
                 <li>Hydraulic Pump</a></li>
                 <li><a href="cr.html">Compression Ratio</a></li>
                 <li><a href="speed.html">Mph to kmph</a></li>
+                <li><a href="volume.html">Volume</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
     <h3>Hydraulic Pump Calculator </h3>
+    <hr>
     <table>
         <tr>
             <td><label for="Vp">Vp (cc)</label></td>
             <td><input type="number" id="Vp"></td>
         </tr>
         <tr>
-            <td><label for="Nv">Nv</label></td>
+            <td><label for="Nv">&eta;v</label></td>
             <td><input type="number" id="Nv"></td>
         </tr>
         <tr>
@@ -35,7 +37,7 @@
             <td><input type="number" id="n"></td>
         </tr>
         <tr>
-            <td><label for="Nmh">Nmh</label></td>
+            <td><label for="Nmh">&eta;mh</label></td>
             <td><input type="number" id="Nmh"></td>
         </tr>
         <tr>
@@ -65,7 +67,7 @@
             <td><span id="qveffp"></span></td>
         </tr>
         <tr>
-            <td><label for="Ntotp">Ntotp</label></td>
+            <td><label for="Ntotp">&eta;totp</label></td>
             <td><span id="Ntotp"></span></td>
         </tr>
         <tr>
