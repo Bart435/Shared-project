@@ -8,12 +8,21 @@ const { glob } = require("glob");
 const PG = promisify(glob);
 const Ascii = require("ascii-table");
 
+
+
 client.commands = new Collection();
 
+client.cooldowns = new Collection();
+
+
+
 require("./Handlers/Modal")(client);
+
+
 
 ["Events", "Commands"].forEach(handler => {
     require(`./Handlers/${handler}`)(client, PG, Ascii);
 });
+
 
 client.login(Token);
