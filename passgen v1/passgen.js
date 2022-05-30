@@ -16,7 +16,7 @@ function password() {
     lastEnd = last.value.toLowerCase().substring(0, 3);
     telEnd = tel.value.substring(0, 4);
     endResult = `${firstEnd}.${lastEnd}.${telEnd}`;
-
+    // set them false by default
     let t = false;
     let e = false;
     let s = false;
