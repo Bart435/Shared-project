@@ -56,5 +56,5 @@ function saveFile() {
                 window.alert(savedInfo);
             };         
         };
-    };   
+    };
 }
