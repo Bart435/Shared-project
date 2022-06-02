@@ -13,6 +13,8 @@ const outputNtotp = document.getElementById("Ntotp")
 const outputQvlekp = document.getElementById("qvlekp")
 const outputPpompas = document.getElementById("Ppompas")
 const outputPthp = document.getElementById("Pthp")
+const vpStop = document.getElementById("vpStop")
+const barStop = document.getElementById("barStop")
 
 //Button
 const hp = document.getElementById("hp").addEventListener("click", calc)
@@ -33,6 +35,8 @@ function calc(){
     calcQvlekp(qvthp, qveffp)
     calcPpompas(ppompas)
     calcPthp(barToNM)
+    calcStopOne(vpm)
+    calcBarStop(barToNM)
 }
 
 function calcQvthp(qvthp){
@@ -53,5 +57,11 @@ function calcPpompas(ppompas){
     outputPpompas.innerHTML = `<strong>${ppompas.toFixed(2)}</strong> W | <strong>${(ppompas / 1000).toFixed(2)}</strong> kW`
 }
 function calcPthp(barToNM){
-    outputPthp.innerHTML = `<strong>${barToNM}</strong> W`
+    outputPthp.innerHTML = ``
+}
+function calcStopOne(vpm){
+    vpStop.innerHTML = `<strong>${vpm}</strong> m^3`
+}
+function calcBarStop(barToNM){
+    barStop.innerHTML = `<strong>${barToNM}</strong> Nm`
 }
