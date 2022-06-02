@@ -34,7 +34,7 @@ function calc(){
     calcNtotp(ntotp)
     calcQvlekp(qvthp, qveffp)
     calcPpompas(ppompas)
-    calcPthp(barToNM)
+    calcPthp(barToNM, qveffp)
     calcStopOne(vpm)
     calcBarStop(barToNM)
 }
@@ -56,8 +56,8 @@ function calcQvlekp(qvthp, qveffp){
 function calcPpompas(ppompas){
     outputPpompas.innerHTML = `<strong>${ppompas.toFixed(2)}</strong> W | <strong>${(ppompas / 1000).toFixed(2)}</strong> kW`
 }
-function calcPthp(barToNM){
-    outputPthp.innerHTML = ``
+function calcPthp(barToNM, qveffp){
+    outputPthp.innerHTML = `<strong>${barToNM * qveffp}</strong> W | <strong>${(barToNM * qveffp / 1000).toFixed(2)}</strong>`
 }
 function calcStopOne(vpm){
     vpStop.innerHTML = `<strong>${vpm}</strong> m^3`

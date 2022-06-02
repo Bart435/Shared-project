@@ -12,6 +12,7 @@ function calcVolume() {
     // Pre-Calculations
     let radius2 = parseFloat(radius.value) * parseFloat(radius.value)
     let solve = (Math.PI) * (radius2) * parseFloat(height.value)
+    let liters = solve / 1000
     
-    volume.innerHTML = `<strong>${solve.toFixed(2)}</strong> cc`
+    volume.innerHTML = `<strong>${solve.toFixed(3)} cc || ${liters.toFixed(3)} Liters</strong>`
 }
